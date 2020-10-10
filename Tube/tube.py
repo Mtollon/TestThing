@@ -241,7 +241,7 @@ class Tube(commands.Cog):
                     subs[i]["previous"] = entry["published"]
                     new_history.append(entry["yt_videoid"])
                     if channel.permissions_for(guild.me).embed_links:
-                        await self.bot.send_filtered(channel, content=f'@e new video on our channel {entry["link"]}')
+                        await self.bot.send_filtered(channel, content=f'@everyone new video on The Stjarnor Youtube Channel! Check it out at: {entry["link"]}')
 
                     else:
                         description = (f"New video from *{entry['author'][:500]}*:"
